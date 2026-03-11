@@ -1,5 +1,5 @@
 image:
-  repository: 386275436648.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo
+   repository: 513348750131.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo
   tag: 17
   pullPolicy: Always
 
