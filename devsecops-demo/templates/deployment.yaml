@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsecops-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devsecops-demo
+  template:
+    metadata:
+      labels:
+        app: devsecops-demo
+    spec:
+      imagePullSecrets:
+      - name: ecr-secret
+      containers:
+      - name: devsecops-demo
+        image: 513348750131.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo:latest
+        ports:
+        - containerPort: 8080

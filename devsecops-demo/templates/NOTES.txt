@@ -1,0 +1,7 @@
+Application deployed successfully.
+
+To get the service:
+
+kubectl get svc
+
+Access the application using the NodePort assigned.
