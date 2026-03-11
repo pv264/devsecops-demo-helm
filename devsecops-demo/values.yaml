@@ -1,6 +1,6 @@
 image:
   repository: 513348750131.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo
-  tag: 17
+  tag: 18
   pullPolicy: Always
 
 service:
