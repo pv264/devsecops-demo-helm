@@ -16,6 +16,6 @@ spec:
       - name: ecr-secret
       containers:
       - name: devsecops-demo
-        image: 513348750131.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo:latest
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: 8080
