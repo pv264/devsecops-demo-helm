@@ -1,31 +1,21 @@
 image:
   repository: 513348750131.dkr.ecr.ap-south-1.amazonaws.com/devsecops-demo
-  tag: 23
+  tag: "29"
   pullPolicy: Always
-
 service:
   type: NodePort
   port: 8080
-
 serviceAccount:
   create: true
   annotations: {}
   name: ""
-
 podAnnotations: {}
-
 podSecurityContext: {}
-
 securityContext: {}
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
-
 ingress:
   enabled: false
   className: ""
@@ -36,7 +26,6 @@ ingress:
         - path: /
           pathType: Prefix
   tls: []
-
 autoscaling:
   enabled: false
   minReplicas: 1
