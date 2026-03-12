@@ -17,5 +17,6 @@ spec:
       containers:
       - name: devsecops-demo
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
